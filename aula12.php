@@ -20,6 +20,7 @@ require 'models/produto.php';
 $produto = new \models\Produto();
 $produto->mostrarDetalhes();
 
+echo '<br>';
 /*
 Podemos simplificar um pouco mais usando "use" seguido do nome da pasta, barra invertida e o nome da classe.
 
@@ -30,6 +31,7 @@ use classes\Produto;
 $produto = new Produto();
 $produto->mostrarDetalhes();
 
+echo '<br>';
 /*
 Outra maneira também é dar apelidos as nossas classes e chama-las por esse apelido.
 
