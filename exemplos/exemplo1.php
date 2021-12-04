@@ -1,4 +1,7 @@
 <?php 
+
+//Exemplo criado por mim mesmo para testar meu aprendizado
+
     class Telefone{
         public $tela;
         public $som;
