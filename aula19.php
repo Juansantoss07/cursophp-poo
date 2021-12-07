@@ -14,7 +14,4 @@ PDO - Significa PHP Data Object
 
 
 */
-
-
-
 ?>

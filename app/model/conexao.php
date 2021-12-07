@@ -1,5 +1,9 @@
 <?php 
 
+namespace app\model;
+
+use PDO;
+
 class Conexao {
 
     private static $instance; //-> Esse método vai verificar se já existe uma instância da conexão, se existir ele irá retornar a instância
