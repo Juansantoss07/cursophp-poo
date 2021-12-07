@@ -2,6 +2,8 @@
 
 namespace app\model;
 
+use PDO;
+
 class ProdutoDao{
 
     public function create(Produto $p) {
@@ -16,6 +18,16 @@ class ProdutoDao{
     }
 
     public function read(){
+
+        $sql = 'SELECT * FROM produtos';
+
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->execute;
+
+        if ($stmt->rowCount() > 0):
+            $resultado = $stmt->fetchALL(\PDO::FETCH_ASSOC);
+            return $resultado;
+        endif;
 
     }
 
